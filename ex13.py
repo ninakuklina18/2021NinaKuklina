@@ -1,0 +1,46 @@
+import turtle
+import math
+
+turtle.shape('turtle')
+def okr(r) :
+	for i in range(100) :
+    		turtle.forward(r)
+    		turtle.left(180 - (180* (100-2) / 100))
+def dug(r) :
+	for i in range(50) :
+    		turtle.forward(r)
+    		turtle.right(180 - (180* (100-2) / 100))
+def eye() :
+	turtle.color('blue')
+	turtle.begin_fill()
+	okr(0.7)
+	turtle.end_fill()
+	turtle.color('black')
+	okr(0.7)
+	turtle.penup()
+turtle.begin_fill()
+turtle.color('yellow')
+okr(5)
+turtle.end_fill()
+turtle.color('black')
+okr(5)
+turtle.penup()
+turtle.goto(0.3* 100 * 5 /(2 * math.pi), 1.25* 100 * 5 /(2 * math.pi))
+turtle.pendown()
+eye()
+turtle.goto(-0.3* 100 * 5 /(2 * math.pi), 1.25* 100 * 5 /(2 * math.pi))
+turtle.pendown()
+eye()
+turtle.penup()
+turtle.goto(0, 100 * 5 /(2 * math.pi))
+turtle.pendown()
+turtle.width(7)
+turtle.goto(0, 0.75 * 100 * 5 /(2 * math.pi))
+turtle.penup()
+turtle.goto(0.3* 100 * 5 /(2 * math.pi), 0.7* 100 * 5 /(2 * math.pi))
+turtle.pendown()
+turtle.color('red')
+turtle.right(90)
+dug(0.3 * 5)
+turtle.color('yellow')
+turtle.forward(20)
