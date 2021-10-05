@@ -6,7 +6,7 @@ canvas.pack()
  
 r = 100
  
-n = int(input('Количество лучей:'))
+n = int(input('ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г«ГіГ·ГҐГ©:'))
  
 for k in range(n):
     if n % 2 == 0:
