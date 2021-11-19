@@ -171,7 +171,6 @@ pygame.init()
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 bullet = 0
 balls = []
-targets = []
 clock = pygame.time.Clock()
 gun = Gun(screen)
 target = Target(screen)
